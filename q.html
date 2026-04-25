@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neev's Page</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Sections */
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Intro */
+.intro h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.intro p {
+    max-width: 650px;
+    color: #cbd5f5;
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+/* Images */
+.image-box {
+    margin-top: 30px;
+}
+
+.image-box img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.image-box img:hover {
+    transform: scale(1.05);
+}
+
+/* Button */
+.btn {
+    margin-top: 40px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+/* Form */
+.form-container {
+    padding: 40px 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.question {
+    margin: 20px 0;
+    text-align: left;
+}
+
+label {
+    color: #cbd5f5;
+    font-size: 0.95rem;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    background: #1e293b;
+    color: white;
+}
+
+button[type="submit"] {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div class="section intro" id="intro">
+    <h1>Neev Gohel</h1>
+
+    <p>
+        I won’t lie… I still like you.  
+        And maybe that never really changed.  
+        But some things don’t feel the same anymore,  
+        not because I don’t care, but because I see things differently now.  
+        <br><br>
+        This isn’t about blaming you or questioning the past.  
+        It’s just me trying to understand what’s real…  
+        and what actually matters now.  
+    </p>
+
+    <!-- Images -->
+    <div class="image-box">
+         <img src="C:\Users\tusha\Downloads\WhatsApp Image 2026-04-25 at 4.14.16 PM.jpeg" alt="Memory 1">
+        <img src="C:\Users\tusha\Downloads\WhatsApp Image 2026-04-25 at 4.14.16 PM (1).jpeg" alt="Memory 2">
+    </div>
+
+    <button class="btn" onclick="start()">Continue</button>
+</div>
+
+<!-- QUESTIONS -->
+<div class="section hidden" id="questions">
+    <div class="form-container">
+
+        <h2>Just be honest</h2>
+
+        <p style="color:#cbd5f5; margin-bottom:20px;">
+        Answer True or False, and explain in one line why.  
+        Your explanation matters more than the answer.
+        </p>
+
+        <form action="https://formsubmit.co/tushargohel.2634@gmail.com" method="POST">
+
+            <div class="question">
+                <label>1. Do you actually like me, or just the way I treat you?</label>
+                <select name="Q1_choice" required>
+                    <option value="">Select</option>
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+                <textarea name="Q1_explain" placeholder="Why?" required></textarea>
+            </div>
+
+            <div class="question">
+                <label>2. Are your feelings for me stronger than what you had before?</label>
+                <select name="Q2_choice" required>
+                    <option value="">Select</option>
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+                <textarea name="Q2_explain" placeholder="Why?" required></textarea>
+            </div>
+
+            <div class="question">
+                <label>3. Do you think I deserve everything that happened in the past?</label>
+                <select name="Q3_choice" required>
+                    <option value="">Select</option>
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+                <textarea name="Q3_explain" placeholder="Why?" required></textarea>
+            </div>
+
+            <div class="question">
+                <label>4. Did you realize my value only after things went wrong?</label>
+                <select name="Q4_choice" required>
+                    <option value="">Select</option>
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+                <textarea name="Q4_explain" placeholder="Why?" required></textarea>
+            </div>
+
+            <div class="question">
+                <label>5. Are you afraid of losing me, or just afraid of being alone?</label>
+                <select name="Q5_choice" required>
+                    <option value="">Select</option>
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+                <textarea name="Q5_explain" placeholder="Why?" required></textarea>
+            </div>
+
+            <div class="question">
+                <label>6. Are your feelings coming from love or loneliness?</label>
+                <select name="Q6_choice" required>
+                    <option value="">Select</option>
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+                <textarea name="Q6_explain" placeholder="Why?" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</div>
+
+<script>
+function start() {
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("questions").style.display = "flex";
+}
+</script>
+
+</body>
+</html>
